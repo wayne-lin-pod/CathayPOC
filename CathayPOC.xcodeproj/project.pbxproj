@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		182A60C2232E12B600DD4B8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A60C1232E12B600DD4B8A /* AppDelegate.m */; };
+		182A60C5232E12B600DD4B8A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A60C4232E12B600DD4B8A /* ViewController.m */; };
+		182A60C8232E12B600DD4B8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182A60C6232E12B600DD4B8A /* Main.storyboard */; };
+		182A60CA232E12B800DD4B8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182A60C9232E12B800DD4B8A /* Assets.xcassets */; };
+		182A60CD232E12B800DD4B8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182A60CB232E12B800DD4B8A /* LaunchScreen.storyboard */; };
+		182A60D0232E12B800DD4B8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A60CF232E12B800DD4B8A /* main.m */; };
+		182A60DA232E12B800DD4B8A /* CathayPOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A60D9232E12B800DD4B8A /* CathayPOCTests.m */; };
+		182A60E5232E12B800DD4B8A /* CathayPOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A60E4232E12B800DD4B8A /* CathayPOCUITests.m */; };
+		182A6108232E451C00DD4B8A /* NewFriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A6106232E451C00DD4B8A /* NewFriendsCell.m */; };
+		182A6109232E451C00DD4B8A /* NewFriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182A6107232E451C00DD4B8A /* NewFriendsCell.xib */; };
+		182A610D232E453300DD4B8A /* FriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A610B232E453300DD4B8A /* FriendsCell.m */; };
+		182A610E232E453300DD4B8A /* FriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182A610C232E453300DD4B8A /* FriendsCell.xib */; };
+		182A6112232E455200DD4B8A /* FriendTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A6110232E455200DD4B8A /* FriendTopCell.m */; };
+		182A6113232E455200DD4B8A /* FriendTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182A6111232E455200DD4B8A /* FriendTopCell.xib */; };
+		183A49F82337598D00082888 /* UserDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183A49F72337598D00082888 /* UserDataModel.m */; };
+		183A49FB23375A4500082888 /* HttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 183A49FA23375A4500082888 /* HttpService.m */; };
+		183A49FE2337625900082888 /* FriendsDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183A49FD2337625900082888 /* FriendsDataModel.m */; };
+		183A4A052337765E00082888 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183A4A042337765E00082888 /* HomeViewController.m */; };
+		18AB33D723388D01008EF870 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB33C223388D01008EF870 /* JSONValueTransformer.m */; };
+		18AB33D823388D01008EF870 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB33C523388D01008EF870 /* JSONKeyMapper.m */; };
+		18AB33D923388D01008EF870 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB33C723388D01008EF870 /* JSONModel.m */; };
+		18AB33DA23388D01008EF870 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB33C823388D01008EF870 /* JSONModelError.m */; };
+		18AB33DB23388D01008EF870 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB33CB23388D01008EF870 /* JSONModelClassProperty.m */; };
+		18AB33DD23388D01008EF870 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB33D123388D01008EF870 /* JSONHTTPClient.m */; };
+		18AB33DE23388D01008EF870 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB33D223388D01008EF870 /* JSONAPI.m */; };
+		18AB33DF23388D01008EF870 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB33D623388D01008EF870 /* JSONModel+networking.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		182A60D6232E12B800DD4B8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182A60B5232E12B600DD4B8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 182A60BC232E12B600DD4B8A;
+			remoteInfo = CathayPOC;
+		};
+		182A60E1232E12B800DD4B8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182A60B5232E12B600DD4B8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 182A60BC232E12B600DD4B8A;
+			remoteInfo = CathayPOC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		182A60BD232E12B600DD4B8A /* CathayPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CathayPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		182A60C0232E12B600DD4B8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		182A60C1232E12B600DD4B8A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		182A60C3232E12B600DD4B8A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		182A60C4232E12B600DD4B8A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		182A60C7232E12B600DD4B8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		182A60C9232E12B800DD4B8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		182A60CC232E12B800DD4B8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		182A60CE232E12B800DD4B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182A60CF232E12B800DD4B8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		182A60D5232E12B800DD4B8A /* CathayPOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CathayPOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		182A60D9232E12B800DD4B8A /* CathayPOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CathayPOCTests.m; sourceTree = "<group>"; };
+		182A60DB232E12B800DD4B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182A60E0232E12B800DD4B8A /* CathayPOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CathayPOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		182A60E4232E12B800DD4B8A /* CathayPOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CathayPOCUITests.m; sourceTree = "<group>"; };
+		182A60E6232E12B800DD4B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182A6105232E451C00DD4B8A /* NewFriendsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewFriendsCell.h; sourceTree = "<group>"; };
+		182A6106232E451C00DD4B8A /* NewFriendsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewFriendsCell.m; sourceTree = "<group>"; };
+		182A6107232E451C00DD4B8A /* NewFriendsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewFriendsCell.xib; sourceTree = "<group>"; };
+		182A610A232E453300DD4B8A /* FriendsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendsCell.h; sourceTree = "<group>"; };
+		182A610B232E453300DD4B8A /* FriendsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendsCell.m; sourceTree = "<group>"; };
+		182A610C232E453300DD4B8A /* FriendsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsCell.xib; sourceTree = "<group>"; };
+		182A610F232E455200DD4B8A /* FriendTopCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendTopCell.h; sourceTree = "<group>"; };
+		182A6110232E455200DD4B8A /* FriendTopCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendTopCell.m; sourceTree = "<group>"; };
+		182A6111232E455200DD4B8A /* FriendTopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTopCell.xib; sourceTree = "<group>"; };
+		183A49F62337598D00082888 /* UserDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDataModel.h; sourceTree = "<group>"; };
+		183A49F72337598D00082888 /* UserDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDataModel.m; sourceTree = "<group>"; };
+		183A49F923375A4500082888 /* HttpService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpService.h; sourceTree = "<group>"; };
+		183A49FA23375A4500082888 /* HttpService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpService.m; sourceTree = "<group>"; };
+		183A49FC2337625900082888 /* FriendsDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendsDataModel.h; sourceTree = "<group>"; };
+		183A49FD2337625900082888 /* FriendsDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendsDataModel.m; sourceTree = "<group>"; };
+		183A4A032337765E00082888 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		183A4A042337765E00082888 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		18AB33C223388D01008EF870 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		18AB33C323388D01008EF870 /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		18AB33C423388D01008EF870 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		18AB33C523388D01008EF870 /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		18AB33C723388D01008EF870 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		18AB33C823388D01008EF870 /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		18AB33C923388D01008EF870 /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		18AB33CA23388D01008EF870 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		18AB33CB23388D01008EF870 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		18AB33CC23388D01008EF870 /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		18AB33CD23388D01008EF870 /* JSONModel.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = JSONModel.modulemap; sourceTree = "<group>"; };
+		18AB33CE23388D01008EF870 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18AB33CF23388D01008EF870 /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
+		18AB33D123388D01008EF870 /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
+		18AB33D223388D01008EF870 /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
+		18AB33D323388D01008EF870 /* JSONModel+networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+networking.h"; sourceTree = "<group>"; };
+		18AB33D423388D01008EF870 /* JSONHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHTTPClient.h; sourceTree = "<group>"; };
+		18AB33D523388D01008EF870 /* JSONAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPI.h; sourceTree = "<group>"; };
+		18AB33D623388D01008EF870 /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		182A60BA232E12B600DD4B8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182A60D2232E12B800DD4B8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182A60DD232E12B800DD4B8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		182A60B4232E12B600DD4B8A = {
+			isa = PBXGroup;
+			children = (
+				182A60BF232E12B600DD4B8A /* CathayPOC */,
+				182A60D8232E12B800DD4B8A /* CathayPOCTests */,
+				182A60E3232E12B800DD4B8A /* CathayPOCUITests */,
+				182A60BE232E12B600DD4B8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		182A60BE232E12B600DD4B8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				182A60BD232E12B600DD4B8A /* CathayPOC.app */,
+				182A60D5232E12B800DD4B8A /* CathayPOCTests.xctest */,
+				182A60E0232E12B800DD4B8A /* CathayPOCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		182A60BF232E12B600DD4B8A /* CathayPOC */ = {
+			isa = PBXGroup;
+			children = (
+				182A60C0232E12B600DD4B8A /* AppDelegate.h */,
+				182A60C1232E12B600DD4B8A /* AppDelegate.m */,
+				182A60C3232E12B600DD4B8A /* ViewController.h */,
+				182A60C4232E12B600DD4B8A /* ViewController.m */,
+				183A4A032337765E00082888 /* HomeViewController.h */,
+				183A4A042337765E00082888 /* HomeViewController.m */,
+				183A4A262338604200082888 /* Libraries */,
+				183A49F22337584500082888 /* Remote */,
+				182A6104232E44F800DD4B8A /* Cell */,
+				182A60C6232E12B600DD4B8A /* Main.storyboard */,
+				182A60C9232E12B800DD4B8A /* Assets.xcassets */,
+				182A60CB232E12B800DD4B8A /* LaunchScreen.storyboard */,
+				182A60CE232E12B800DD4B8A /* Info.plist */,
+				182A60CF232E12B800DD4B8A /* main.m */,
+			);
+			path = CathayPOC;
+			sourceTree = "<group>";
+		};
+		182A60D8232E12B800DD4B8A /* CathayPOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				182A60D9232E12B800DD4B8A /* CathayPOCTests.m */,
+				182A60DB232E12B800DD4B8A /* Info.plist */,
+			);
+			path = CathayPOCTests;
+			sourceTree = "<group>";
+		};
+		182A60E3232E12B800DD4B8A /* CathayPOCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				182A60E4232E12B800DD4B8A /* CathayPOCUITests.m */,
+				182A60E6232E12B800DD4B8A /* Info.plist */,
+			);
+			path = CathayPOCUITests;
+			sourceTree = "<group>";
+		};
+		182A6104232E44F800DD4B8A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				182A6105232E451C00DD4B8A /* NewFriendsCell.h */,
+				182A6106232E451C00DD4B8A /* NewFriendsCell.m */,
+				182A6107232E451C00DD4B8A /* NewFriendsCell.xib */,
+				182A610A232E453300DD4B8A /* FriendsCell.h */,
+				182A610B232E453300DD4B8A /* FriendsCell.m */,
+				182A610C232E453300DD4B8A /* FriendsCell.xib */,
+				182A610F232E455200DD4B8A /* FriendTopCell.h */,
+				182A6110232E455200DD4B8A /* FriendTopCell.m */,
+				182A6111232E455200DD4B8A /* FriendTopCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		183A49F22337584500082888 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				183A49F52337597000082888 /* DataModel */,
+				183A49F923375A4500082888 /* HttpService.h */,
+				183A49FA23375A4500082888 /* HttpService.m */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		183A49F52337597000082888 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				183A49F62337598D00082888 /* UserDataModel.h */,
+				183A49F72337598D00082888 /* UserDataModel.m */,
+				183A49FC2337625900082888 /* FriendsDataModel.h */,
+				183A49FD2337625900082888 /* FriendsDataModel.m */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		183A4A262338604200082888 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				18AB33C023388D01008EF870 /* JSONModel */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		18AB33C023388D01008EF870 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				18AB33C123388D01008EF870 /* JSONModelTransformations */,
+				18AB33C623388D01008EF870 /* JSONModel */,
+				18AB33CD23388D01008EF870 /* JSONModel.modulemap */,
+				18AB33CE23388D01008EF870 /* Info.plist */,
+				18AB33CF23388D01008EF870 /* JSONModelLib.h */,
+				18AB33D023388D01008EF870 /* JSONModelNetworking */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		18AB33C123388D01008EF870 /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				18AB33C223388D01008EF870 /* JSONValueTransformer.m */,
+				18AB33C323388D01008EF870 /* JSONKeyMapper.h */,
+				18AB33C423388D01008EF870 /* JSONValueTransformer.h */,
+				18AB33C523388D01008EF870 /* JSONKeyMapper.m */,
+			);
+			path = JSONModelTransformations;
+			sourceTree = "<group>";
+		};
+		18AB33C623388D01008EF870 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				18AB33C723388D01008EF870 /* JSONModel.m */,
+				18AB33C823388D01008EF870 /* JSONModelError.m */,
+				18AB33C923388D01008EF870 /* JSONModelClassProperty.h */,
+				18AB33CA23388D01008EF870 /* JSONModel.h */,
+				18AB33CB23388D01008EF870 /* JSONModelClassProperty.m */,
+				18AB33CC23388D01008EF870 /* JSONModelError.h */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		18AB33D023388D01008EF870 /* JSONModelNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				18AB33D123388D01008EF870 /* JSONHTTPClient.m */,
+				18AB33D223388D01008EF870 /* JSONAPI.m */,
+				18AB33D323388D01008EF870 /* JSONModel+networking.h */,
+				18AB33D423388D01008EF870 /* JSONHTTPClient.h */,
+				18AB33D523388D01008EF870 /* JSONAPI.h */,
+				18AB33D623388D01008EF870 /* JSONModel+networking.m */,
+			);
+			path = JSONModelNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		182A60BC232E12B600DD4B8A /* CathayPOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182A60E9232E12B800DD4B8A /* Build configuration list for PBXNativeTarget "CathayPOC" */;
+			buildPhases = (
+				182A60B9232E12B600DD4B8A /* Sources */,
+				182A60BA232E12B600DD4B8A /* Frameworks */,
+				182A60BB232E12B600DD4B8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CathayPOC;
+			productName = CathayPOC;
+			productReference = 182A60BD232E12B600DD4B8A /* CathayPOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		182A60D4232E12B800DD4B8A /* CathayPOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182A60EC232E12B800DD4B8A /* Build configuration list for PBXNativeTarget "CathayPOCTests" */;
+			buildPhases = (
+				182A60D1232E12B800DD4B8A /* Sources */,
+				182A60D2232E12B800DD4B8A /* Frameworks */,
+				182A60D3232E12B800DD4B8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				182A60D7232E12B800DD4B8A /* PBXTargetDependency */,
+			);
+			name = CathayPOCTests;
+			productName = CathayPOCTests;
+			productReference = 182A60D5232E12B800DD4B8A /* CathayPOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		182A60DF232E12B800DD4B8A /* CathayPOCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182A60EF232E12B800DD4B8A /* Build configuration list for PBXNativeTarget "CathayPOCUITests" */;
+			buildPhases = (
+				182A60DC232E12B800DD4B8A /* Sources */,
+				182A60DD232E12B800DD4B8A /* Frameworks */,
+				182A60DE232E12B800DD4B8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				182A60E2232E12B800DD4B8A /* PBXTargetDependency */,
+			);
+			name = CathayPOCUITests;
+			productName = CathayPOCUITests;
+			productReference = 182A60E0232E12B800DD4B8A /* CathayPOCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		182A60B5232E12B600DD4B8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					182A60BC232E12B600DD4B8A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					182A60D4232E12B800DD4B8A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 182A60BC232E12B600DD4B8A;
+					};
+					182A60DF232E12B800DD4B8A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 182A60BC232E12B600DD4B8A;
+					};
+				};
+			};
+			buildConfigurationList = 182A60B8232E12B600DD4B8A /* Build configuration list for PBXProject "CathayPOC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 182A60B4232E12B600DD4B8A;
+			productRefGroup = 182A60BE232E12B600DD4B8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				182A60BC232E12B600DD4B8A /* CathayPOC */,
+				182A60D4232E12B800DD4B8A /* CathayPOCTests */,
+				182A60DF232E12B800DD4B8A /* CathayPOCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		182A60BB232E12B600DD4B8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182A6109232E451C00DD4B8A /* NewFriendsCell.xib in Resources */,
+				182A60CD232E12B800DD4B8A /* LaunchScreen.storyboard in Resources */,
+				182A60CA232E12B800DD4B8A /* Assets.xcassets in Resources */,
+				182A610E232E453300DD4B8A /* FriendsCell.xib in Resources */,
+				182A60C8232E12B600DD4B8A /* Main.storyboard in Resources */,
+				182A6113232E455200DD4B8A /* FriendTopCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182A60D3232E12B800DD4B8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182A60DE232E12B800DD4B8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		182A60B9232E12B600DD4B8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AB33DD23388D01008EF870 /* JSONHTTPClient.m in Sources */,
+				18AB33DA23388D01008EF870 /* JSONModelError.m in Sources */,
+				182A6108232E451C00DD4B8A /* NewFriendsCell.m in Sources */,
+				183A49FB23375A4500082888 /* HttpService.m in Sources */,
+				183A49F82337598D00082888 /* UserDataModel.m in Sources */,
+				182A610D232E453300DD4B8A /* FriendsCell.m in Sources */,
+				18AB33D823388D01008EF870 /* JSONKeyMapper.m in Sources */,
+				18AB33DF23388D01008EF870 /* JSONModel+networking.m in Sources */,
+				18AB33D723388D01008EF870 /* JSONValueTransformer.m in Sources */,
+				182A60C5232E12B600DD4B8A /* ViewController.m in Sources */,
+				182A60D0232E12B800DD4B8A /* main.m in Sources */,
+				18AB33DB23388D01008EF870 /* JSONModelClassProperty.m in Sources */,
+				183A4A052337765E00082888 /* HomeViewController.m in Sources */,
+				18AB33D923388D01008EF870 /* JSONModel.m in Sources */,
+				183A49FE2337625900082888 /* FriendsDataModel.m in Sources */,
+				18AB33DE23388D01008EF870 /* JSONAPI.m in Sources */,
+				182A60C2232E12B600DD4B8A /* AppDelegate.m in Sources */,
+				182A6112232E455200DD4B8A /* FriendTopCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182A60D1232E12B800DD4B8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182A60DA232E12B800DD4B8A /* CathayPOCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182A60DC232E12B800DD4B8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182A60E5232E12B800DD4B8A /* CathayPOCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		182A60D7232E12B800DD4B8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 182A60BC232E12B600DD4B8A /* CathayPOC */;
+			targetProxy = 182A60D6232E12B800DD4B8A /* PBXContainerItemProxy */;
+		};
+		182A60E2232E12B800DD4B8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 182A60BC232E12B600DD4B8A /* CathayPOC */;
+			targetProxy = 182A60E1232E12B800DD4B8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		182A60C6232E12B600DD4B8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				182A60C7232E12B600DD4B8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		182A60CB232E12B800DD4B8A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				182A60CC232E12B800DD4B8A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		182A60E7232E12B800DD4B8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		182A60E8232E12B800DD4B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		182A60EA232E12B800DD4B8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CathayPOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.thinkpower.CathayPOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		182A60EB232E12B800DD4B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CathayPOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.thinkpower.CathayPOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		182A60ED232E12B800DD4B8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CathayPOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.thinkpower.CathayPOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CathayPOC.app/CathayPOC";
+			};
+			name = Debug;
+		};
+		182A60EE232E12B800DD4B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CathayPOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.thinkpower.CathayPOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CathayPOC.app/CathayPOC";
+			};
+			name = Release;
+		};
+		182A60F0232E12B800DD4B8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CathayPOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.thinkpower.CathayPOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CathayPOC;
+			};
+			name = Debug;
+		};
+		182A60F1232E12B800DD4B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CathayPOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.thinkpower.CathayPOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CathayPOC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		182A60B8232E12B600DD4B8A /* Build configuration list for PBXProject "CathayPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182A60E7232E12B800DD4B8A /* Debug */,
+				182A60E8232E12B800DD4B8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		182A60E9232E12B800DD4B8A /* Build configuration list for PBXNativeTarget "CathayPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182A60EA232E12B800DD4B8A /* Debug */,
+				182A60EB232E12B800DD4B8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		182A60EC232E12B800DD4B8A /* Build configuration list for PBXNativeTarget "CathayPOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182A60ED232E12B800DD4B8A /* Debug */,
+				182A60EE232E12B800DD4B8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		182A60EF232E12B800DD4B8A /* Build configuration list for PBXNativeTarget "CathayPOCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182A60F0232E12B800DD4B8A /* Debug */,
+				182A60F1232E12B800DD4B8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 182A60B5232E12B600DD4B8A /* Project object */;
+}

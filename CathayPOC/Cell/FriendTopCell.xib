@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendTopCell" rowHeight="137" id="KGk-i7-Jjw" customClass="FriendTopCell">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="399" height="136.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EnD-Ie-suJ">
+                        <rect key="frame" x="30" y="0.0" width="339" height="136.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好友列表 23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnL-Hv-cFZ">
+                                <rect key="frame" x="0.0" y="10" width="72.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加好友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ag-9t-GXR">
+                                <rect key="frame" x="299" y="10" width="40" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.92549019610000005" green="0.0" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icAddPink" translatesAutoresizingMaskIntoConstraints="NO" id="p7J-zu-Rn3">
+                                <rect key="frame" x="279" y="12" width="12" height="12"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vzd-w9-JGj">
+                                <rect key="frame" x="0.0" y="41" width="339" height="36"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icSearchBarSearchGray" translatesAutoresizingMaskIntoConstraints="NO" id="yD9-eH-zVt">
+                                        <rect key="frame" x="10" y="11" width="14" height="14"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="想轉一筆給誰呢？" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AbE-sV-fI3">
+                                        <rect key="frame" x="32" y="0.0" width="307" height="36"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="AbE-sV-fI3" secondAttribute="bottom" id="8kL-8u-nht"/>
+                                    <constraint firstItem="AbE-sV-fI3" firstAttribute="top" secondItem="Vzd-w9-JGj" secondAttribute="top" id="EBW-Z1-Vqt"/>
+                                    <constraint firstItem="yD9-eH-zVt" firstAttribute="leading" secondItem="Vzd-w9-JGj" secondAttribute="leading" constant="10" id="Qh9-8s-vN4"/>
+                                    <constraint firstAttribute="trailing" secondItem="AbE-sV-fI3" secondAttribute="trailing" id="XQr-Z1-JgV"/>
+                                    <constraint firstItem="AbE-sV-fI3" firstAttribute="leading" secondItem="yD9-eH-zVt" secondAttribute="trailing" constant="8" id="c33-zC-0XL"/>
+                                    <constraint firstAttribute="height" constant="36" id="fpL-ah-SbF"/>
+                                    <constraint firstItem="yD9-eH-zVt" firstAttribute="centerY" secondItem="Vzd-w9-JGj" secondAttribute="centerY" id="zYi-kU-Bx3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xnL-Hv-cFZ" firstAttribute="leading" secondItem="EnD-Ie-suJ" secondAttribute="leading" id="1Eg-M3-ONK"/>
+                            <constraint firstItem="3Ag-9t-GXR" firstAttribute="leading" secondItem="p7J-zu-Rn3" secondAttribute="trailing" constant="8" id="7rh-JZ-TIQ"/>
+                            <constraint firstItem="p7J-zu-Rn3" firstAttribute="centerY" secondItem="3Ag-9t-GXR" secondAttribute="centerY" id="JaF-og-pK6"/>
+                            <constraint firstAttribute="trailing" secondItem="Vzd-w9-JGj" secondAttribute="trailing" id="Yeh-vg-c5G"/>
+                            <constraint firstAttribute="trailing" secondItem="3Ag-9t-GXR" secondAttribute="trailing" id="aQz-kh-fSd"/>
+                            <constraint firstItem="Vzd-w9-JGj" firstAttribute="leading" secondItem="EnD-Ie-suJ" secondAttribute="leading" id="cLw-qt-gIg"/>
+                            <constraint firstItem="3Ag-9t-GXR" firstAttribute="top" secondItem="EnD-Ie-suJ" secondAttribute="top" constant="10" id="tg6-PW-Umi"/>
+                            <constraint firstItem="Vzd-w9-JGj" firstAttribute="top" secondItem="xnL-Hv-cFZ" secondAttribute="bottom" constant="15" id="vXe-lU-aAa"/>
+                            <constraint firstItem="xnL-Hv-cFZ" firstAttribute="top" secondItem="EnD-Ie-suJ" secondAttribute="top" constant="10" id="wNF-0G-1IY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EnD-Ie-suJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="BnV-qb-K6J"/>
+                    <constraint firstItem="EnD-Ie-suJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gRb-tA-PvJ"/>
+                    <constraint firstAttribute="trailing" secondItem="EnD-Ie-suJ" secondAttribute="trailing" constant="30" id="v4I-tp-5k9"/>
+                    <constraint firstAttribute="bottom" secondItem="EnD-Ie-suJ" secondAttribute="bottom" id="xWW-HU-hIe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="inputTxt" destination="AbE-sV-fI3" id="HWk-N7-lS4"/>
+                <outlet property="searchView" destination="Vzd-w9-JGj" id="p4e-9b-ajO"/>
+            </connections>
+            <point key="canvasLocation" x="194.92753623188406" y="163.72767857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icAddPink" width="12" height="12"/>
+        <image name="icSearchBarSearchGray" width="14" height="14"/>
+    </resources>
+</document>
